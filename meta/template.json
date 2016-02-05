@@ -1,0 +1,88 @@
+{
+    "id": "4361",
+    "name": "Facebook Opt-in",
+    "mobile": true,
+    "notes": "Fixed h3 styling, added max width to banner image, added max width to header text, removed strong tag from video text",
+    "syntax": 4,
+    "version": 1.02,
+    "style": {
+        "replacements": [
+            {"type":"font", "find": "'Roboto'", "name": "Font"},
+            {"type": "color", "find": "#000001", "name": "Link Color"},
+            {"type": "color", "find": "#999999", "name": "Link Color Hover"},
+            {"type": "color", "find": "#404041", "name": "Button Text"},
+            {"type": "color", "find": "#FAC44E", "name": "Button"},
+            {"type": "color", "find": "#fffffd", "name": "Button Hover Background"},
+            {"type": "color", "find": "#EFF0F3", "name": "Header Background"},
+            {"type": "color", "find": "#3F60A5", "name": "Header Text"},
+            {"type": "color", "find": "#fffffe", "name": "Banner Background (No Image)"},
+            {"type": "color", "find": "#3F60A4", "name": "Banner Overlay"},
+            {"type": "color", "find": "#fffeff", "name": "Banner Text"},
+            {"type": "color", "find": "#F1F0F5", "name": "Video Banner Background"},
+            {"type": "color", "find": "#575042", "name": "Video Banner Text"},
+            {"type": "color", "find": "#3F60A3", "name": "Details Background"},
+            {"type": "color", "find": "#FFFFFC", "name": "Details Text"},
+            {"type": "color", "find": "#EFF0F2", "name": "Footer Background"},
+            {"type": "color", "find": "#3D5EA1", "name": "Footer Text Color"},
+            {"type": "color", "find": "#000005", "name": "Footer Link Hover Color"}
+        ]
+    },
+    "variables": {
+        "facebookCommentsURL": {
+          "variable": "facebookCommentsURL",
+          "dafault": "http://leadpages.net",
+          "name": "The URL to read and write comments on Facebook."
+        },
+        "facebookShareURL": {
+            "variable": "facebookShareURL",
+            "dafault": "",
+            "name": "The URL to share on Facebook. Leave blank to share the current page."
+        },
+        "twitterShareURL": {
+            "variable": "twitterShareURL",
+            "dafault": "",
+            "name": "The URL to share on Twitter. Leave blank to share the current page."
+        },
+        "googleShareURL": {
+            "variable": "googleShareURL",
+            "dafault": "",
+            "name": "The URL to share on Google+. Leave blank to share the current page."
+        },
+        "linkedInShareURL": {
+            "variable": "linkedInShareURL",
+            "dafault": "",
+            "name": "The URL to share on LinkedIn. Leave blank to share the current page."
+        }
+    },
+    "elements": [
+        {"id": "header", "name": "Header", "type": "container"},
+        {"id": "header-text", "name": "Text", "type": "text"},
+        {"id": "header-image", "name": "Image", "type": "image", "data": { "max-width": 70 } },
+
+        {"id": "banner", "name": "Banner", "type": "container"},
+        {"id": "background", "name": "Banner Image", "type": "background-image"},
+        {"id": "background-overlay", "name": "Overlay", "type": "container"},
+        {"id": "banner-title", "name": "Title", "type": "text"},
+        {"id": "banner-subtitle", "name": "Subtitle", "type": "text"},
+        {"id": "banner-image", "name": "Image", "type": "image", "data": { "max-width": 200 } },
+        {"id": "banner-button", "name": "Call to Action", "type": "link", "data": {"href": "#/optin"} },
+        {"id": "banner-text", "name": "Text", "type": "text"},
+
+        {"id": "video-banner", "name": "Video Banner", "type": "container"},
+        {"id": "video-container", "name": "Video Container", "type": "container"},
+        {"id": "video", "name": "Video", "type": "video"},
+        {"id": "video-subtitle", "name": "Subtitle", "type": "text"},
+        {"id": "video-text", "name": "Text", "type": "text"},
+        {"id": "video-button", "name": "Call to Action", "type": "link", "data": {"href": "#/optin"} },
+
+        {"id": "details", "name": "Details", "type": "container"},
+        {"id": "details-title", "name": "Title", "type": "text"},
+        {"id": "details-subtitle", "name": "Subtitle", "type": "text"},
+        {"id": "details-overview-list", "name": "List", "type": "text"},
+        {"id": "details-button", "name": "Call to Action", "type": "link", "data": {"href": "#/optin"} },
+
+        {"id": "footer", "name": "Copyright", "type": "container"},
+        {"id": "copyright-text", "name": "Text", "type": "text"}
+    ],
+    "form": {}
+}
