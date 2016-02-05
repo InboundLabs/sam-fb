@@ -305,6 +305,7 @@ a:hover {
 	display: inline-block;
 	float: center;
 	max-width: 80%;
+    white-space: nowrap;
 }
 .header p {
 	font-size: 14px;
@@ -358,6 +359,7 @@ a:hover {
 }
 .banner-subtitle {
 	margin-top: 10px;
+    text-transform: uppercase;
 }
 .banner-subtitle strong, .banner-subtitle b {
 	font-weight: 400;
@@ -456,6 +458,7 @@ a:hover {
 /*FOOTER*/
 .footer {
     background: #EFF0F2;
+    border-top: 2px solid #6daada
 }
 .footer a, .footer p {
 	font-weight: 400;
