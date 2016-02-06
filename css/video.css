@@ -24,7 +24,7 @@ body .hs-button.primary, body input[type="submit"], body input[type="button"] {
     font-family: Raleway,sans-serif;
     font-size: 14px;
     text-decoration: none!important;
-    border: none;
+    border: 1px solid transparent;
     height: 50px;
     padding: 0 40px;
     border-radius: 5px;
@@ -67,6 +67,7 @@ body .hs-button.primary, body input[type="submit"], body input[type="button"] {
     padding: 7px 18px 7px;
     position: relative;
     text-align: center;
+    border: 1px solid transparent;
 }
 .hs-form .hs-button:active:not(.inactive):not(.link), .hs-form .hs-button.depressed:not(.inactive):not(.link), .dropdown-open>.hs-form .hs-button:not(.inactive):not(.link) {
     background-color: #599eeb;
