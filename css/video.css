@@ -242,7 +242,8 @@ a.consult-redirect {
 }
 
 .free-consultation-cta,
-.free-consultation-cta:hover {
+.free-consultation-cta:hover,
+.free-consultation-cta:active {
     text-decoration: none;
 }
 
