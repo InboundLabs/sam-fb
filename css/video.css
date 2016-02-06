@@ -241,9 +241,10 @@ a.consult-redirect {
     background-color: #4f8ffb;
 }
 
-.free-consultation-cta,
-.free-consultation-cta:hover,
-.free-consultation-cta:active {
+a.free-consultation-cta,
+a.free-consultation-cta:hover,
+a.free-consultation-cta:active,
+a.free-consultation-cta:visited {
     text-decoration: none;
 }
 
