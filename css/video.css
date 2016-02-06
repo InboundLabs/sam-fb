@@ -214,7 +214,8 @@ a.consult-redirect {
     width: 100%;
     border: 1px solid #C7D1DC;
     border-radius: 5px;
-    height: 30px;
+    height: auto;
+    line-height: 30px;
     box-shadow: none;
     margin-bottom: 0.5em;
     color: #333;
