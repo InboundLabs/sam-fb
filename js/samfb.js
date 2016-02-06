@@ -94,6 +94,7 @@ hbspt.forms.create({
                     window._onWistiaPostRoll = function() {
                         postRollContainer = $(".tof-wistia-postroll");
                         $("#cta-post-second-video").detach().appendTo(postRollContainer);
+                        $("#cta-post-second-video a").attr("target", "_top");
                         centerContent();
                     };
                     wizardElem.detach().appendTo(".form-stage");
